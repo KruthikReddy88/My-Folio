@@ -162,11 +162,13 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href="/My-Folio/project/public/Resume.pdf"
-                  className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
-                >
-                  Resume <Download className="h-4 w-4" />
-                </a>
+  href="/My-Folio/Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
+>
+  Resume <Download className="h-4 w-4" />
+</a>
               </li>
             </ul>
           </div>
