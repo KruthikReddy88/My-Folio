@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Github, Linkedin, Mail, Download } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -24,7 +24,6 @@ const Navbar = () => {
     const currentScrollY = window.scrollY;
     const heroHeight = window.innerHeight;
 
-    // Only show navbar in first section or when scrolling up
     if (currentScrollY > heroHeight) {
       setIsVisible(false);
     } else {
@@ -55,9 +54,9 @@ const Navbar = () => {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
-      
+
       setActive(sectionId);
       setToggle(false);
 
@@ -68,7 +67,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 transform ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
+        isVisible ? "translate-y-0" : "-translate-y-full"
       } ${scrolled ? "bg-primary/95 backdrop-blur-md shadow-lg" : "bg-transparent"} px-6 sm:px-16 py-5`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -122,12 +121,12 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="/Resume.pdf"  // Correct link to the file
-            target="_blank"  // Opens in a new tab
-            rel="noopener noreferrer"  // For security
+            href="https://drive.google.com/uc?export=view&id=17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
           >
-            Resume <Download className="h-4 w-4" />
+            View Resume <Download className="h-4 w-4" />
           </a>
         </motion.div>
 
@@ -153,8 +152,8 @@ const Navbar = () => {
                     active === nav.href.substring(1) ? "text-accent" : "text-white"
                   }`}
                 >
-                  <a 
-                    href={nav.href} 
+                  <a
+                    href={nav.href}
                     onClick={(e) => scrollToSection(e, nav.href.substring(1))}
                     className="transition-colors duration-300 hover:text-accent"
                   >
@@ -164,12 +163,12 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href="/Resume.pdf"  // Correct link to the file
-                  target="_blank"  // Opens in a new tab
-                  rel="noopener noreferrer"  // For security
+                  href="https://drive.google.com/uc?export=view&id=17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
                 >
-                  Resume <Download className="h-4 w-4" />
+                  View Resume <Download className="h-4 w-4" />
                 </a>
               </li>
             </ul>
