@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Github, Linkedin, Mail, Download } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -22,9 +22,8 @@ const Navbar = () => {
 
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
-    const heroHeight = window.innerHeight; // Height of first section
+    const heroHeight = window.innerHeight;
 
-    // Only show navbar in first section or when scrolling up
     if (currentScrollY > heroHeight) {
       setIsVisible(false);
     } else {
@@ -40,35 +39,38 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
-  const scrollToSection = useCallback((e, sectionId) => {
-    e.preventDefault();
-    if (isScrolling) return;
+  const scrollToSection = useCallback(
+    (e, sectionId) => {
+      e.preventDefault();
+      if (isScrolling) return;
 
-    const element = document.getElementById(sectionId);
-    if (element) {
-      setIsScrolling(true);
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+      const element = document.getElementById(sectionId);
+      if (element) {
+        setIsScrolling(true);
+        const offset = 80;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-      
-      setActive(sectionId);
-      setToggle(false);
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
 
-      setTimeout(() => setIsScrolling(false), 1000);
-    }
-  }, [isScrolling]);
+        setActive(sectionId);
+        setToggle(false);
+
+        setTimeout(() => setIsScrolling(false), 1000);
+      }
+    },
+    [isScrolling]
+  );
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 transform ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
+        isVisible ? "translate-y-0" : "-translate-y-full"
       } ${scrolled ? "bg-primary/95 backdrop-blur-md shadow-lg" : "bg-transparent"} px-6 sm:px-16 py-5`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -122,7 +124,9 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href="My-Folio/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
           >
             Resume <Download className="h-4 w-4" />
@@ -151,8 +155,8 @@ const Navbar = () => {
                     active === nav.href.substring(1) ? "text-accent" : "text-white"
                   }`}
                 >
-                  <a 
-                    href={nav.href} 
+                  <a
+                    href={nav.href}
                     onClick={(e) => scrollToSection(e, nav.href.substring(1))}
                     className="transition-colors duration-300 hover:text-accent"
                   >
@@ -162,13 +166,13 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-  href="/My-Folio/Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
->
-  Resume <Download className="h-4 w-4" />
-</a>
+                  href="My-Folio/Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
+                >
+                  Resume <Download className="h-4 w-4" />
+                </a>
               </li>
             </ul>
           </div>
