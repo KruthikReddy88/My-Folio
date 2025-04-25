@@ -7,6 +7,19 @@ import { useInView } from "react-intersection-observer";
 
 const experiences = [
   {
+    title: "CEH v12 Certification Training",
+    company: "EC-Council (Upcoming)",
+    date: "June 2025 – July 2025",
+    description: "Certified Ethical Hacker v12 training program covering advanced cybersecurity techniques.",
+    icon: <Briefcase className="w-full h-full text-white p-1" />,
+    iconBg: "#383E56",
+    points: [
+      "Training includes hands-on labs and real-world threat simulation environments (iLabs).",
+      "Covers attack vectors, vulnerability assessment, system penetration testing, and network security.",
+      "Prepares for CEH v12 certification and advanced penetration testing roles."
+    ]
+  },
+  {
     title: "Cybersecurity Analyst - Job Simulation",
     company: "Forage",
     date: "Jan 2025 – Feb 2025",
@@ -25,7 +38,7 @@ const experiences = [
     date: "Sep 2024 – Oct 2024",
     description: "Completed hands-on cybersecurity tasks across multiple domains.",
     icon: <Briefcase className="w-full h-full text-white p-1" />,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     points: [
       "Implemented Caesar Cipher encryption.",
       "Developed image encryption techniques using pixel manipulation.",
@@ -53,7 +66,7 @@ const experiences = [
     date: "2020 – 2022",
     description: "Studied core subjects with emphasis on mathematics and computer science.",
     icon: <GraduationCap className="w-full h-full text-white p-1" />,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     points: [
       "Completed coursework in mathematics, physics, and computer science.",
       "Achieved a grade of 5.56 CGPA.",
@@ -91,7 +104,7 @@ const Experience = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="section-subtext">What I have done so far</p>
-          <h2 className="section-heading">Experience & Education.</h2>
+          <h2 className="section-heading">Experience & Education</h2>
         </motion.div>
 
         <div className="mt-20 flex flex-col">
