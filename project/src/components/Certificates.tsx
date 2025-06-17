@@ -19,7 +19,7 @@ const certificates = [
     date: "November 2024",
     description: "Fundamentals of ethical hacking, including penetration testing and vulnerability assessment.",
     image: "https://iclass.eccouncil.org/wp-content/uploads/2022/05/EHE_intl.jpg",
-    link: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~9PDGKXF3CFWD/CERTIFICATE_LANDING_PAGE~9PDGKXF3CFWD.jpeg"
+    link: "https://raw.githubusercontent.com/KruthikReddy88/My-Folio/refs/heads/main/project/public/Ethical%20Hacking%20Essentials.jpg"
   },
   {
     title: "Introduction to CISSP: Security Assessment & Operations",
@@ -27,7 +27,7 @@ const certificates = [
     date: "September 2024",
     description: "Exploration of key CISSP domains with focus on risk management, security operations, and assessment.",
     image: "https://rms.koenig-solutions.com/Sync_data/CCE_Logo/2239-cissp.jpgL.jpg",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQH6ZypHqO6KPw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725707634059?e=1745528400&v=beta&t=mLRA5M3FW1BhP0aJ0YctUPa6WpBz6tDOcPBxUdSlxN8"
+    link: "https://raw.githubusercontent.com/KruthikReddy88/My-Folio/refs/heads/main/project/public/Simplilearn.jpg"
   },
   {
     title: "Digital Forensics for Pentesters",
@@ -35,7 +35,7 @@ const certificates = [
     date: "February 2025",
     description: "Hands-on training in digital forensics tools, investigation techniques, and cybercrime analysis.",
     image: "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:0,cw:1920,ch:1080,q:80,w:1920/5fz9SMYxWbv44jFVcD4vmd.jpg",
-    link: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~Y4UDS0T4TWL9/CERTIFICATE_LANDING_PAGE~Y4UDS0T4TWL9.jpeg"
+    link: "https://raw.githubusercontent.com/KruthikReddy88/My-Folio/refs/heads/main/project/public/DF%20for%20pentesters.jpg"
   }
 ];
 
