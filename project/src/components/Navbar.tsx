@@ -53,20 +53,10 @@ const Navbar = () => {
         const elementPosition = elementRect - bodyRect;
         const offsetPosition = elementPosition - offset;
 
-<<<<<<< HEAD
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-
-      setActive(sectionId);
-      setToggle(false);
-=======
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth",
         });
->>>>>>> 24b592a (Updated project files after recent changes)
 
         setActive(sectionId);
         setToggle(false);
@@ -136,20 +126,12 @@ const Navbar = () => {
             </a>
           ))}
           <a
-<<<<<<< HEAD
             href="https://drive.google.com/uc?export=view&id=17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5"
-=======
-            href="https://drive.google.com/file/d/17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5/preview"
->>>>>>> 24b592a (Updated project files after recent changes)
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
           >
-<<<<<<< HEAD
             View Resume <Download className="h-4 w-4" />
-=======
-          Resume
->>>>>>> 24b592a (Updated project files after recent changes)
           </a>
         </motion.div>
 
@@ -186,20 +168,12 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-<<<<<<< HEAD
                   href="https://drive.google.com/uc?export=view&id=17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5"
-=======
-                  href="https://drive.google.com/file/d/17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5/preview"
->>>>>>> 24b592a (Updated project files after recent changes)
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
                 >
-<<<<<<< HEAD
                   View Resume <Download className="h-4 w-4" />
-=======
-                 Resume
->>>>>>> 24b592a (Updated project files after recent changes)
                 </a>
               </li>
             </ul>
