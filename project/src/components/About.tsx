@@ -91,7 +91,7 @@ const About = () => {
             className="md:w-1/2 relative"
           >
             <img
-              src="https://www.drivethrucards.com/images/2463/420102.png"
+              src="C:\Users\Admin\OneDrive\Desktop\MyFolio\project\public\My image.jpg"
               alt="Cyberpunk Portrait"
               className="rounded-lg shadow-2xl object-cover w-full h-[500px] transform hover:scale-105 transition-transform duration-500"
             />

@@ -10,7 +10,7 @@ const technologies = [
   },
   {
     name: "Parrot OS",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Parrot_Logo.png/600px-Parrot_Logo.png",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOq0dlbQFRZlvdvWZJlWwYtREimbffZbD_Kw&s",
   },
   {
     name: "Python",

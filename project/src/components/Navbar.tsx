@@ -39,19 +39,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
-  const scrollToSection = useCallback((e, sectionId) => {
-    e.preventDefault();
-    if (isScrolling) return;
+  const scrollToSection = useCallback(
+    (e, sectionId) => {
+      e.preventDefault();
+      if (isScrolling) return;
 
-    const element = document.getElementById(sectionId);
-    if (element) {
-      setIsScrolling(true);
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+      const element = document.getElementById(sectionId);
+      if (element) {
+        setIsScrolling(true);
+        const offset = 80;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
+<<<<<<< HEAD
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
@@ -59,10 +61,21 @@ const Navbar = () => {
 
       setActive(sectionId);
       setToggle(false);
+=======
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+>>>>>>> 24b592a (Updated project files after recent changes)
 
-      setTimeout(() => setIsScrolling(false), 1000);
-    }
-  }, [isScrolling]);
+        setActive(sectionId);
+        setToggle(false);
+
+        setTimeout(() => setIsScrolling(false), 1000);
+      }
+    },
+    [isScrolling]
+  );
 
   return (
     <nav
@@ -94,7 +107,9 @@ const Navbar = () => {
             </div>
             <p className="text-white text-[18px] font-bold cursor-pointer flex mr-8">
               Kruthik Reddy &nbsp;
-              <span className="hidden lg:block">| Engineer & Cybersecurity Specialist</span>
+              <span className="hidden lg:block">
+                | Engineer & Cybersecurity Specialist
+              </span>
             </p>
           </a>
         </motion.div>
@@ -121,12 +136,20 @@ const Navbar = () => {
             </a>
           ))}
           <a
+<<<<<<< HEAD
             href="https://drive.google.com/uc?export=view&id=17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5"
+=======
+            href="https://drive.google.com/file/d/17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5/preview"
+>>>>>>> 24b592a (Updated project files after recent changes)
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
           >
+<<<<<<< HEAD
             View Resume <Download className="h-4 w-4" />
+=======
+          Resume
+>>>>>>> 24b592a (Updated project files after recent changes)
           </a>
         </motion.div>
 
@@ -163,12 +186,20 @@ const Navbar = () => {
               ))}
               <li>
                 <a
+<<<<<<< HEAD
                   href="https://drive.google.com/uc?export=view&id=17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5"
+=======
+                  href="https://drive.google.com/file/d/17Nj_rbDNEVfybdKUgAWUwdaaTnTxPEt5/preview"
+>>>>>>> 24b592a (Updated project files after recent changes)
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-white bg-accent px-4 py-2 rounded-full hover:bg-accent-700 transition-all duration-300"
                 >
+<<<<<<< HEAD
                   View Resume <Download className="h-4 w-4" />
+=======
+                 Resume
+>>>>>>> 24b592a (Updated project files after recent changes)
                 </a>
               </li>
             </ul>

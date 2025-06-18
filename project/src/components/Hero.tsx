@@ -61,7 +61,10 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl text-gray-300 mb-8 max-w-2xl"
             >
-              I'm a Computer Science and Engineering student specializing in Cybersecurity. Passionate about ethical hacking, secure software engineering, and building robust systems to defend against modern digital threats.
+              I'm a Computer Science and Engineering student specializing in 
+              Cybersecurity. Passionate about ethical hacking, secure software 
+              engineering, and building robust systems to defend against 
+              modern digital threats.
             </motion.p>
 
             <motion.div

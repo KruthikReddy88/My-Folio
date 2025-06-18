@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/My-Folio/', // 👈 important for GitHub Pages
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
@@ -15,8 +16,8 @@ export default defineConfig({
           'three-vendor': ['three'],
           'drei-vendor': ['@react-three/drei'],
           'fiber-vendor': ['@react-three/fiber'],
-        }
-      }
+        },
+      },
     },
     chunkSizeWarningLimit: 1000,
   },
