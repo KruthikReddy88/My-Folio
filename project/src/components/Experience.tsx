@@ -9,7 +9,7 @@ const experiences = [
   {
     title: "CEH v12 Certification Training",
     company: "EC-Council (Upcoming)",
-    date: "June 2025 – July 2025",
+    date: "Aug 2025 – Nov 2025",
     description: "Certified Ethical Hacker v12 training program covering advanced cybersecurity techniques.",
     icon: <Briefcase className="w-full h-full text-white p-1" />,
     iconBg: "#383E56",
