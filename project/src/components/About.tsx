@@ -91,8 +91,8 @@ const About = () => {
             className="md:w-1/2 relative"
           >
             <img
-              src="C:\Users\Admin\OneDrive\Desktop\MyFolio\project\public\My image.jpg"
-              alt="Cyberpunk Portrait"
+              src="/Image.jpg"
+              alt="Profile Portrait"
               className="rounded-lg shadow-2xl object-cover w-full h-[500px] transform hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full bg-accent/20 backdrop-blur-sm z-[-1] animate-pulse-slow"></div>

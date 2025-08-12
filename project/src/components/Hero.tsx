@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import HeroScene from "./canvas/HeroScene";
+import Earth from "./canvas/Earth"; // Adjust path if needed
 
 const Hero = () => {
   return (
@@ -16,11 +16,11 @@ const Hero = () => {
             antialias: true,
             powerPreference: "high-performance",
             alpha: true,
-            depth: true
+            depth: true,
           }}
         >
           <Suspense fallback={null}>
-            <HeroScene />
+            <Earth />
           </Suspense>
         </Canvas>
       </div>
@@ -61,10 +61,9 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl text-gray-300 mb-8 max-w-2xl"
             >
-              I'm a Computer Science and Engineering student specializing in 
-              Cybersecurity. Passionate about ethical hacking, secure software 
-              engineering, and building robust systems to defend against 
-              modern digital threats.
+              I'm a Computer Science and Engineering student specializing in
+              Cybersecurity. Passionate about ethical hacking, secure software
+              engineering, and building robust systems to defend against modern digital threats.
             </motion.p>
 
             <motion.div
